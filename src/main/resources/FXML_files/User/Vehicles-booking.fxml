@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1260.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller.Vehicles_bookingController">
+   <children>
+      <ImageView fitHeight="730.0" fitWidth="1260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/UserInterface.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="hotelsBtn" layoutX="208.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#hotelsBtn" prefHeight="42.0" prefWidth="171.0" styleClass="button1" stylesheets="@../../CSS_files/UserInterface.css" text="Hotels" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="flightsBtn" layoutX="422.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#flightsBtn" prefHeight="42.0" prefWidth="171.0" styleClass="button1" stylesheets="@../../CSS_files/UserInterface.css" text="Flights" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="vehiclesBtn" layoutX="636.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#vehiclesBtn" prefHeight="42.0" prefWidth="171.0" styleClass="button1" stylesheets="@../../CSS_files/UserInterface.css" text="Vehicles" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="attractionsBtn" layoutX="850.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#attractionsBtn" prefHeight="42.0" prefWidth="171.0" styleClass="button1" stylesheets="@../../CSS_files/UserInterface.css" text="Attractions" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Button>
+      <MenuButton alignment="BASELINE_RIGHT" contentDisplay="BOTTOM" layoutX="1074.0" layoutY="12.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="161.0" stylesheets="@../../CSS_files/UserInterface.css" text="   Account">
+        <items>
+          <MenuItem fx:id="profileOption" mnemonicParsing="false" text="Profile" />
+          <MenuItem fx:id="logoutOption" mnemonicParsing="false" text="Logout" />
+        </items>
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </MenuButton>
+      <Button id="homeBtn" layoutX="22.0" layoutY="3.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="142.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: white;" text=" " />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="1086.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/usericon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="370.0" fitWidth="1160.0" layoutX="47.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/borderbooking2.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="72.0" layoutY="132.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="250.0" fitWidth="250.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameLabel" alignment="TOP_LEFT" layoutX="292.0" layoutY="1.0" prefHeight="59.0" prefWidth="818.0" text="Ba Na Hills" textFill="#0090ff" wrapText="true">
+               <font>
+                  <Font name="Eras Bold ITC" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" alignment="TOP_LEFT" layoutX="307.0" layoutY="85.0" prefHeight="42.0" prefWidth="804.0" text="39, Le Thien Tri, Ngu Hanh Son, Da Nang" textFill="#404040">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="adultLabel" alignment="CENTER" layoutY="271.0" prefHeight="42.0" prefWidth="250.0" text="\$40.65 / Adult" textFill="#0090ff" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="childLabel" alignment="CENTER" layoutY="298.0" prefHeight="42.0" prefWidth="250.0" style="-fx-background-color: transparent;" text="\$30.70 / Child" textFill="#00c6ff" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="description" editable="false" layoutX="306.0" layoutY="152.0" prefHeight="180.0" prefWidth="804.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="292.0" layoutY="61.0" prefHeight="22.0" prefWidth="84.0" text="Address: " textFill="#7e7e7e">
+               <font>
+                  <Font name="Eras Bold ITC" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="292.0" layoutY="123.0" prefHeight="22.0" prefWidth="111.0" text="Description:" textFill="#7e7e7e">
+               <font>
+                  <Font name="Eras Bold ITC" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="backtoSearch" fitHeight="42.0" fitWidth="35.0" layoutX="49.0" layoutY="73.0" onMouseClicked="#backtoSearch" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/left-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="1160.0" layoutX="47.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/borderbooking.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="72.0" layoutY="512.0" prefHeight="22.0" prefWidth="111.0" text="Booking" textFill="#7e7e7e">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberOfAdult" layoutX="105.0" layoutY="561.0" prefHeight="35.0" prefWidth="296.0" promptText="Number of adult" />
+      <TextField fx:id="numberOfChild" layoutX="105.0" layoutY="621.0" prefHeight="35.0" prefWidth="296.0" promptText="Number of child" />
+      <Label layoutX="593.0" layoutY="515.0" prefHeight="22.0" prefWidth="111.0" text="Total Price" textFill="#7e7e7e">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalPrice" alignment="CENTER" layoutX="596.0" layoutY="584.0" prefHeight="32.0" prefWidth="153.0" text="\$0.00" textFill="#0090ff">
+         <font>
+            <Font name="Eras Bold ITC" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="bookingBtn" layoutX="973.0" layoutY="572.0" mnemonicParsing="false" onMouseClicked="#bookingBtn" prefHeight="42.0" prefWidth="171.0" styleClass="searchBtn" stylesheets="@../../CSS_files/UserInterface-flights.css" text="Booking" textAlignment="CENTER">
+         <font>
+            <Font name="Eras Bold ITC" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
